@@ -1,9 +1,10 @@
 #include <iostream>
+#include "KsiazkaAdresowa.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    KsiazkaAdresowa ksiazka1;
     return 0;
 }
