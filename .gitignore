@@ -1,4 +1,5 @@
-KsiazkaAdresowa.cpp
 bin/
 obj/
 ksiazkaAdresowaObiektowo.*
+Uzytkownicy.txt
+ks-struct.cpp
