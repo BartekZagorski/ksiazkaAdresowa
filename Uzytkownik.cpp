@@ -24,3 +24,4 @@ string Uzytkownik::pobierzHaslo()
     {
         return haslo;
     }
+

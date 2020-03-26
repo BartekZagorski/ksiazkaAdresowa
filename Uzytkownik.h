@@ -2,6 +2,7 @@
 #define UZYTKOWNIK_H
 
 #include <iostream>
+#include <windows.h>
 
 using namespace std;
 

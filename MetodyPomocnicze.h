@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <sstream>
+#include "Uzytkownik.h"
 
 using namespace std;
 

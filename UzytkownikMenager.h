@@ -21,7 +21,7 @@ class UzytkownikMenager
     Uzytkownik podajDaneNowegoUzytkownika();
 
 public:
-
+    void wczytajUzytkownikowZPliku();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
 };
