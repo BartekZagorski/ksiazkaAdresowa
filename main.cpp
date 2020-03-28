@@ -10,8 +10,10 @@ int main()
     KsiazkaAdresowa ksiazka1("Uzytkownicy2.txt");
     ksiazka1.wypiszWszystkichUzytkownikow();
     ksiazka1.logowanieUzytkownika();
+    ksiazka1.wylogujUzytkownika();
     ksiazka1.zmianaHaslaZalogowanegoUzytkownika();
     ksiazka1.wypiszWszystkichUzytkownikow();
+
 
     return 0;
 }
