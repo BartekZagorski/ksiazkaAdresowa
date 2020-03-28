@@ -11,9 +11,10 @@ class KsiazkaAdresowa
 {
     UzytkownikMenager uzytkownikMenager;
 public:
-    KsiazkaAdresowa(string NAZWA);
+    KsiazkaAdresowa(string NAZWA) :uzytkownikMenager(NAZWA) {};
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
+    void logowanieUzytkownika();
 };
 
 #endif
