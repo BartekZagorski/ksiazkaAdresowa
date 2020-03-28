@@ -21,10 +21,11 @@ class UzytkownikMenager
     Uzytkownik podajDaneNowegoUzytkownika();
 
 public:
-    UzytkownikMenager (string NAZWA) :plikZUzytkownikami(NAZWA) {};
+    UzytkownikMenager (string NAZWA, int NUMER = 0);
     void wczytajUzytkownikowZPliku();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
+    int logowanieUzytkownika();
 };
 
 #endif
