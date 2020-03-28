@@ -21,11 +21,12 @@ class UzytkownikMenager
     Uzytkownik podajDaneNowegoUzytkownika();
 
 public:
-    UzytkownikMenager (string NAZWA, int NUMER = 0);
+    UzytkownikMenager (string, int = 0);
     void wczytajUzytkownikowZPliku();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
-    int logowanieUzytkownika();
+    void logowanieUzytkownika();
+    void zmianaHaslaZalogowanegoUzytkownika();
 };
 
 #endif

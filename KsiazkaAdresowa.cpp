@@ -12,3 +12,7 @@ void KsiazkaAdresowa::logowanieUzytkownika()
 {
     uzytkownikMenager.logowanieUzytkownika();
 }
+void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
+{
+    uzytkownikMenager.zmianaHaslaZalogowanegoUzytkownika();
+}
