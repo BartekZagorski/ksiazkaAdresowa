@@ -22,10 +22,14 @@ class UzytkownikMenager
 
 public:
     UzytkownikMenager (string, int = 0);
+
+    void ustawIdZalogowanegoUzytkownika(int ID);
+    int pobierzIdZalogowanegoUzytkownika();
+
     void wczytajUzytkownikowZPliku();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
-    void logowanieUzytkownika();
+    int logowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika();
     void wylogujUzytkownika();
 };
