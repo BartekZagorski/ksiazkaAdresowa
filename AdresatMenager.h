@@ -21,6 +21,10 @@ class AdresatMenager
 public:
     AdresatMenager(int = 0);
     int dodajAdresata(int idZalogowanegoUzytkownika);
+    int wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
+    void wyswietlWszystkichAdresatow();
+    void wyswietlDaneAdresata(Adresat adresat);
+    void wyczyscAdresatow ();
 };
 
 #endif

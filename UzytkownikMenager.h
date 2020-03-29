@@ -2,6 +2,7 @@
 #define UZYTKOWNIKMENAGER_H
 
 #include "PlikZUzytkownikami.h"
+#include "AdresatMenager.h"
 #include <iostream>
 #include <vector>
 #include "Uzytkownik.h"
@@ -31,7 +32,7 @@ public:
     void wypiszWszystkichUzytkownikow();
     int logowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika();
-    void wylogujUzytkownika();
+    void wylogujUzytkownika(AdresatMenager &adresatMenager);
 };
 
 #endif
