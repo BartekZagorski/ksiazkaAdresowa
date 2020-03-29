@@ -139,7 +139,8 @@ void UzytkownikMenager::zmianaHaslaZalogowanegoUzytkownika()
     plikZUzytkownikami.zapiszWszystkichUzytkownikowDoPliku(uzytkownicy);
 }
 
-void UzytkownikMenager::wylogujUzytkownika()
+void UzytkownikMenager::wylogujUzytkownika(AdresatMenager &adresatMenager)
 {
     idZalogowanegoUzytkownika = 0;
+    adresatMenager.wyczyscAdresatow();
 }
