@@ -22,8 +22,7 @@ int AdresatMenager::dodajAdresata(int idZalogowanegoUzytkownika)
 Adresat AdresatMenager::podajDaneNowegoAdresata(int idZalogowanegoUzytkownika)
 {
     Adresat adresat;
-
-    adresat.ustawId(++idOstatniegoAdresata);
+    adresat.ustawId(idOstatniegoAdresata+1);
     adresat.ustawIdUzytkownika(idZalogowanegoUzytkownika);
 
     cout << "Podaj imie: ";
