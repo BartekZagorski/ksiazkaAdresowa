@@ -1,5 +1,19 @@
 #include "KsiazkaAdresowa.h"
 
+KsiazkaAdresowa::KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
+:
+    uzytkownikMenager(nazwaPlikuZUzytkownikami),
+    NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami)
+    {
+        adresatMenager = NULL;
+    }
+
+KsiazkaAdresowa::~KsiazkaAdresowa()
+{
+    delete adresatMenager;
+    adresatMenager = NULL;
+}
+
 void KsiazkaAdresowa::rejestracjaUzytkownika()
 {
     uzytkownikMenager.rejestracjaUzytkownika();
@@ -10,8 +24,11 @@ void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 }
 void KsiazkaAdresowa::logowanieUzytkownika()
 {
-    uzytkownikMenager.ustawIdZalogowanegoUzytkownika(uzytkownikMenager.logowanieUzytkownika());
-    adresatMenager.wczytajAdresatowZalogowanegoUzytkownikaZPliku(uzytkownikMenager.pobierzIdZalogowanegoUzytkownika());
+    uzytkownikMenager.logowanieUzytkownika();
+    if (uzytkownikMenager.czyUzytkownikJestZalogowany())
+    {
+        adresatMenager = new AdresatMenager (NAZWA_PLIKU_Z_ADRESATAMI, uzytkownikMenager.pobierzIdZalogowanegoUzytkownika());
+    }
 }
 void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
 {
@@ -19,13 +36,15 @@ void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
 }
 void KsiazkaAdresowa::wylogujUzytkownika()
 {
-    uzytkownikMenager.wylogujUzytkownika(adresatMenager);
+    uzytkownikMenager.ustawIdZalogowanegoUzytkownika(0);
+    delete adresatMenager;
+    adresatMenager = NULL;
 }
 void KsiazkaAdresowa::dodajAdresata()
 {
-    adresatMenager.dodajAdresata(uzytkownikMenager.pobierzIdZalogowanegoUzytkownika());
+    adresatMenager->dodajAdresata();
 }
 void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
 {
-    adresatMenager.wyswietlWszystkichAdresatow();
+    adresatMenager->wyswietlWszystkichAdresatow();
 }

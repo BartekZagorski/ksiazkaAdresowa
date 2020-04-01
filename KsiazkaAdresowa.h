@@ -11,10 +11,12 @@ using namespace std;
 class KsiazkaAdresowa
 {
     UzytkownikMenager uzytkownikMenager;
-    AdresatMenager adresatMenager;
+    AdresatMenager* adresatMenager;
+    const string NAZWA_PLIKU_Z_ADRESATAMI;
 
 public:
-    KsiazkaAdresowa(string NAZWA) :uzytkownikMenager(NAZWA) {};
+    KsiazkaAdresowa(string = "Uzytkownicy.txt", string = "Adresaci.txt");
+    ~KsiazkaAdresowa();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
     void logowanieUzytkownika();

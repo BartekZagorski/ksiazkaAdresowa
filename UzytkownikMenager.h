@@ -27,12 +27,12 @@ public:
     void ustawIdZalogowanegoUzytkownika(int ID);
     int pobierzIdZalogowanegoUzytkownika();
 
+    bool czyUzytkownikJestZalogowany();
     void wczytajUzytkownikowZPliku();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
     int logowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika();
-    void wylogujUzytkownika(AdresatMenager &adresatMenager);
 };
 
 #endif
