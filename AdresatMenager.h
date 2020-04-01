@@ -23,7 +23,6 @@ public:
     int dodajAdresata();
     void wyswietlWszystkichAdresatow();
     void wyswietlDaneAdresata(Adresat adresat);
-    void wyczyscAdresatow ();
 };
 
 #endif

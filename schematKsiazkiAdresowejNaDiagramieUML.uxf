@@ -7,12 +7,13 @@
       <x>0</x>
       <y>21</y>
       <w>259</w>
-      <h>140</h>
+      <h>154</h>
     </coordinates>
     <panel_attributes>KsiazkaAdresowa
 -
 - uzytkownikMenager: UzytkownikMenager
-- adresatMenager: AdresatMenager
+- adresatMenager: AdresatMenager*
+- NAZWA_PLIKU_Z_ADRESATAMI: string
 -
 + KsiazkaAdresowa():
 + rejestracjaUzytkownika(): Void
@@ -58,12 +59,12 @@
 - pobierzIdNowegoUzytkownika(): Integer
 - czyIstniejeLogin(): Bool
 + UzytkownikMenager():
++ czyUzytkownikJestZalogowany: Bool
 + wczytajUzytkownikowZPliku(): Void
 + rejestracjaUzytkownika(): Void
 + logowanieUzytkownika(): Integer
 + wypiszWszystkichUzytkownikow(): Void
 + zmianaHaslaZalogowanegoUzytkownika(): Void
-+ wylogujUzytkownika(): Void
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -135,17 +136,15 @@
     </coordinates>
     <panel_attributes>AdresatMenager
 -
-- idOstatniegoAdresata: Integer
+- ID_ZALOGOWANEGO_UZYTKOWNIKA: Integer
 - adresaci: Vector &lt;Adresat&gt;
 - plikZAdresatami: PlikZAdresatami
 -
 - podajDaneNowegoAdresata(): Adresat
 + AdresatMenager():
 + dodajAdresata: Integer
-+ wczytajAdresatowZalogowanegoUzytkownikaZPliku(): Integer
 + wyswietlWszystkichAdresatow(): Void
-+ wyswietlDaneAdresata(): Void
-+ wyczyscAdresatow(): Void</panel_attributes>
++ wyswietlDaneAdresata(): Void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -158,7 +157,8 @@
     </coordinates>
     <panel_attributes>PlikZAdresatami
 -
-- nazwaPlikuZAdresatami: Const string
+- NAZWA_PLIKU_Z_ADRESATAMI: String
+- idOstatniegoAdresata: Integer
 -
 + wczytajAdresatowZalogowanegoUzytkownikaZPliku(): Integer
 - zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(): String
