@@ -21,6 +21,8 @@ public:
     static int konwersjaStringNaInt(string liczba);
     static int wczytajLiczbeCalkowita();
     static char wczytajZnak();
+    static char wybierzOpcjeZMenuGlownego();
+    static char wybierzOpcjeZMenuUzytkownika();
 };
 
 #endif

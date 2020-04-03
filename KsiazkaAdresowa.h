@@ -25,6 +25,7 @@ public:
     void dodajAdresata();
     void wyswietlWszystkichAdresatow();
     void usunAdresata();
+    bool czyUzytkownikJestZalogowany();
 };
 
 #endif
