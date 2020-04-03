@@ -12,6 +12,7 @@ class Adresat
 
 public:
 
+    Adresat(int=0,int=0,string="",string="",string="",string="",string="");
     int pobierzId();
     int pobierzIdUzytkownika();
     string pobierzImie();
