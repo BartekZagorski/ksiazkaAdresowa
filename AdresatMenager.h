@@ -17,12 +17,14 @@ class AdresatMenager
     PlikZAdresatami plikZAdresatami;
 
     Adresat podajDaneNowegoAdresata();
+    int podajIdWybranegoAdresata();
 
 public:
     AdresatMenager(string, int = 0);
     int dodajAdresata();
     void wyswietlWszystkichAdresatow();
     void wyswietlDaneAdresata(Adresat adresat);
+    int usunAdresata();
 };
 
 #endif
