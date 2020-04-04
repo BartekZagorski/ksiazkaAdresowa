@@ -60,3 +60,7 @@ void KsiazkaAdresowa::edytujAdresata()
 {
     adresatMenager->edytujAdresata();
 }
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
+{
+    adresatMenager->wyszukajAdresatowPoImieniu();
+}

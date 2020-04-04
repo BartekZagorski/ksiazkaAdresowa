@@ -18,6 +18,7 @@ class AdresatMenager
 
     Adresat podajDaneNowegoAdresata();
     int podajIdWybranegoAdresata();
+    void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
 
 public:
     AdresatMenager(string, int = 0);
@@ -26,6 +27,7 @@ public:
     void wyswietlDaneAdresata(Adresat adresat);
     int usunAdresata();
     void edytujAdresata();
+    void wyszukajAdresatowPoImieniu();
 };
 
 #endif
