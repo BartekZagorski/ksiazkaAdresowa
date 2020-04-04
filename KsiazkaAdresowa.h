@@ -28,6 +28,7 @@ public:
     bool czyUzytkownikJestZalogowany();
     void edytujAdresata();
     void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
 };
 
 #endif
