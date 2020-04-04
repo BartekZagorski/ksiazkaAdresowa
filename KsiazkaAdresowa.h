@@ -26,6 +26,7 @@ public:
     void wyswietlWszystkichAdresatow();
     void usunAdresata();
     bool czyUzytkownikJestZalogowany();
+    void edytujAdresata();
 };
 
 #endif

@@ -23,6 +23,7 @@ public:
     static char wczytajZnak();
     static char wybierzOpcjeZMenuGlownego();
     static char wybierzOpcjeZMenuUzytkownika();
+    static char wybierzOpcjeZMenuEdycja();
 };
 
 #endif

@@ -25,6 +25,7 @@ public:
     void wyswietlWszystkichAdresatow();
     void wyswietlDaneAdresata(Adresat adresat);
     int usunAdresata();
+    void edytujAdresata();
 };
 
 #endif

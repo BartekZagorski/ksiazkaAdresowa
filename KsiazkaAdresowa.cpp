@@ -56,3 +56,7 @@ bool KsiazkaAdresowa::czyUzytkownikJestZalogowany()
 {
     return uzytkownikMenager.czyUzytkownikJestZalogowany();
 }
+void KsiazkaAdresowa::edytujAdresata()
+{
+    adresatMenager->edytujAdresata();
+}
