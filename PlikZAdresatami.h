@@ -7,12 +7,12 @@
 #include <fstream>
 #include "Adresat.h"
 #include "MetodyPomocnicze.h"
+#include "PlikTekstowy.h"
 
 using namespace std;
 
-class PlikZAdresatami
+class PlikZAdresatami :public PlikTekstowy
 {
-    const string NAZWA_PLIKU_Z_ADRESATAMI;
     int idOstatniegoAdresata;
 
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
@@ -24,7 +24,7 @@ class PlikZAdresatami
 
 public:
     PlikZAdresatami(string nazwaPlikuZAdresatami, int idOstatniegoAdresata = 0)
-    : NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami)
+    : PlikTekstowy(nazwaPlikuZAdresatami)
     {
         this->idOstatniegoAdresata = idOstatniegoAdresata;
     };
